@@ -1,0 +1,19 @@
+[package]
+name = "shapes2d"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+point = []
+ray = []
+line = []
+triangle = []
+rectangle = []
+circle = []
+# ellipse = []
+# mesh = []
+
+default = ["point", "ray", "line", "triangle", "rectangle", "circle"]
+
+[dependencies]
+glam = "0.23.0"
