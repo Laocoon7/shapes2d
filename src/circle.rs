@@ -12,10 +12,7 @@ pub struct Circle {
 // ##########
 impl Circle {
     pub fn new(center: Vec2, radius: f32) -> Self {
-        Self {
-            center,
-            radius,
-        }
+        Self { center, radius }
     }
     pub fn new_diameter(center: Vec2, diameter: f32) -> Self {
         Self::new(center, diameter * 0.5)
@@ -68,6 +65,11 @@ impl Default for Circle {
 // ##########
 impl Display for Circle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Circle {{ center: {}, radius: {} }}", self.center(), self.radius())
+        write!(
+            f,
+            "Circle {{ center: {}, radius: {} }}",
+            self.center(),
+            self.radius()
+        )
     }
 }

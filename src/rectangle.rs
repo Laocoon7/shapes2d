@@ -20,7 +20,10 @@ impl Rectangle {
         }
     }
     pub fn new_dimensions(bottom_left: Vec2, width: f32, height: f32) -> Self {
-        Self::new_coordinates(bottom_left, Vec2::new(bottom_left.x + width, bottom_left.y + height))
+        Self::new_coordinates(
+            bottom_left,
+            Vec2::new(bottom_left.x + width, bottom_left.y + height),
+        )
     }
 }
 
@@ -60,7 +63,10 @@ impl Rectangle {
 // ##########
 impl Rectangle {
     pub fn center(&self) -> Vec2 {
-        Vec2 { x: (self.left() + self.right()) * 0.5, y: (self.bottom() + self.top()) * 0.5 }
+        Vec2 {
+            x: (self.left() + self.right()) * 0.5,
+            y: (self.bottom() + self.top()) * 0.5,
+        }
     }
 }
 
@@ -81,6 +87,13 @@ impl Default for Rectangle {
 // ##########
 impl Display for Rectangle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Rectangle {{ bottom: {}, left: {}, top: {}, right: {} }}", self.bottom(), self.left(), self.top(), self.right())
+        write!(
+            f,
+            "Rectangle {{ bottom: {}, left: {}, top: {}, right: {} }}",
+            self.bottom(),
+            self.left(),
+            self.top(),
+            self.right()
+        )
     }
 }

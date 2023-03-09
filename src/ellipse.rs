@@ -1,3 +1,1 @@
-pub struct Ellipse {
-    
-}
+pub struct Ellipse {}

@@ -2,7 +2,7 @@ use std::fmt::Display;
 
 use glam::Vec2;
 
-pub struct Triangle{
+pub struct Triangle {
     coordinate1: Vec2,
     coordinate2: Vec2,
     coordinate3: Vec2,
@@ -16,7 +16,7 @@ impl Triangle {
         Self {
             coordinate1,
             coordinate2,
-            coordinate3
+            coordinate3,
         }
     }
 }
@@ -73,6 +73,12 @@ impl Default for Triangle {
 // ##########
 impl Display for Triangle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Triangle {{ coordinate1: {}, coordinate2: {}, coordinate3: {} }}", self.coordinate1(), self.coordinate2(), self.coordinate3())
+        write!(
+            f,
+            "Triangle {{ coordinate1: {}, coordinate2: {}, coordinate3: {} }}",
+            self.coordinate1(),
+            self.coordinate2(),
+            self.coordinate3()
+        )
     }
 }
