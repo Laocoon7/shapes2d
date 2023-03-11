@@ -2,6 +2,7 @@ use std::fmt::Display;
 
 use glam::Vec2;
 
+/// Represents a single [`Circle`] in 2d space
 pub struct Circle {
     center: Vec2,
     radius: f32,

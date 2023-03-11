@@ -314,7 +314,7 @@ impl Rectangle {
     ///
     /// let mut rect = Rectangle::new(0., 0., 2., 2.);
     /// assert_eq!(rect.width(), 2.);
-    /// 
+    ///
     /// rect.set_x(1.);
     ///
     /// assert_eq!(rect.width(), 2.);
@@ -332,7 +332,7 @@ impl Rectangle {
     ///
     /// let mut rect = Rectangle::new(0., 0., 2., 2.);
     /// assert_eq!(rect.width(), 2.);
-    /// 
+    ///
     /// rect.set_min_x(1.);
     ///
     /// assert_eq!(rect.width(), 1.);
@@ -349,7 +349,7 @@ impl Rectangle {
     ///
     /// let mut rect = Rectangle::new(0., 0., 2., 2.);
     /// assert_eq!(rect.width(), 2.);
-    /// 
+    ///
     /// rect.set_max_x(1.);
     ///
     /// assert_eq!(rect.width(), 1.);
@@ -366,7 +366,7 @@ impl Rectangle {
     ///
     /// let mut rect = Rectangle::new(0., 0., 2., 2.);
     /// assert_eq!(rect.height(), 2.);
-    /// 
+    ///
     /// rect.set_y(1.);
     ///
     /// assert_eq!(rect.height(), 2.);
@@ -384,7 +384,7 @@ impl Rectangle {
     ///
     /// let mut rect = Rectangle::new(0., 0., 2., 2.);
     /// assert_eq!(rect.height(), 2.);
-    /// 
+    ///
     /// rect.set_min_y(1.);
     ///
     /// assert_eq!(rect.height(), 1.);
@@ -401,7 +401,7 @@ impl Rectangle {
     ///
     /// let mut rect = Rectangle::new(0., 0., 2., 2.);
     /// assert_eq!(rect.height(), 2.);
-    /// 
+    ///
     /// rect.set_max_y(1.);
     ///
     /// assert_eq!(rect.height(), 1.);
