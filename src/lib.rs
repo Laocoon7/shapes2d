@@ -10,9 +10,9 @@ pub mod ellipse;
 #[cfg(feature = "line")]
 /// Contains the [`Line`] structure and related methods
 pub mod line;
-#[cfg(feature = "mesh")]
-/// Contains the [`Mesh`] structure and related methods
-pub mod mesh;
+#[cfg(feature = "polygon")]
+/// Contains the [`Polygon`] structure and related methods
+pub mod polygon;
 #[cfg(feature = "point")]
 /// Contains the [`Point`] structure and related methods
 pub mod point;
@@ -34,8 +34,8 @@ pub mod prelude {
     pub use crate::ellipse::Ellipse;
     #[cfg(feature = "line")]
     pub use crate::line::Line;
-    #[cfg(feature = "mesh")]
-    pub use crate::mesh::Mesh;
+    #[cfg(feature = "polygon")]
+    pub use crate::polygon::Polygon;
     #[cfg(feature = "point")]
     pub use crate::point::Point;
     #[cfg(feature = "ray")]

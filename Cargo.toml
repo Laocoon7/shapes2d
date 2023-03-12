@@ -18,10 +18,10 @@ line = []
 triangle = []
 rectangle = []
 circle = []
-# ellipse = []
-# mesh = []
+ellipse = []
+polygon = []
 
-default = ["point", "ray", "line", "triangle", "rectangle", "circle"]
+default = ["point", "ray", "line", "triangle", "rectangle", "circle"] #, "ellipse", "polygon"]
 
 [dependencies]
 glam = "0.23.0"
